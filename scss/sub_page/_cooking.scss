@@ -1,0 +1,770 @@
+#cooking{
+    width: 100%;
+    .eating{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        z-index: -2;
+        opacity: 0.5;
+        top: 0;
+    }
+    h1{
+        margin: 70px auto 120px;
+        font: bold 75px/1 "궁서";
+        color: #888;
+        text-align: center;
+    }
+    .spoon{
+        i{
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            z-index: -1;
+            opacity: 0.6;
+            color: #888;
+            font-size: 500px;
+            transform-origin: bottom;
+            transition: 0.8s;
+        }
+    }
+    .bowl{
+        i{
+            position: absolute;
+            left: 740px;
+            top: 70px;
+            z-index: -1;
+            opacity: 0.6;
+            color: wheat;
+            font-size: 400px;
+            transition: 0.7s;
+        }
+    }
+    .cook{
+        text-align: center;
+        width: 1180px;
+        margin: 0 auto 50px;
+        font: normal 18px/1.8 "Noto Serif KR";
+        color: whitesmoke;
+        background-color: rgba(0,0,0,0.4);
+        padding: 20px;
+        opacity: 0.8;
+    }
+    .forknife{
+        i{
+            position: absolute;
+            top: 150px;
+            right: -20px;
+            z-index: -1;
+            opacity: 0.6;
+            color: #888;
+            font-size: 500px;
+            transform: rotate(-45deg);
+            transform-origin: bottom center;
+            transition: 0.8s;
+        }
+    }
+    .boil{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .pork{
+            i{
+                position: absolute;
+                top: 1000px;
+                left: 100px;
+                font-size: 150px;
+                color: pink;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .temp{
+            i{
+                position: absolute;
+                top: 1300px;
+                left: 100px;
+                font-size: 150px;
+                color: red;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .water{
+            i{
+                position: absolute;
+                top: 1300px;
+                right: 100px;
+                font-size: 150px;
+                color: blue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .barbeque{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .pork2{
+            i{
+                position: absolute;
+                top: 1700px;
+                left: 100px;
+                font-size: 150px;
+                color: pink;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .burn{
+            i{
+                position: absolute;
+                top: 2000px;
+                left: 50px;
+                font-size: 150px;
+                color: red;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .fire{
+            i{
+                position: absolute;
+                top: 2000px;
+                right: 100px;
+                font-size: 150px;
+                color: red;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .pickling{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .crab{
+            img{
+                position: absolute;
+                top: 2450px;
+                left: 80px;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 2.5s;
+            }
+        }
+        .soysauce{
+            i{
+                position: absolute;
+                top: 2750px;
+                left: 100px;
+                font-size: 150px;
+                color: brown;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .sea{
+            i{
+                position: absolute;
+                top: 2750px;
+                right: 60px;
+                font-size: 150px;
+                color: lightblue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .braised{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .beef{
+            i{
+                position: absolute;
+                top: 3250px;
+                left: 80px;
+                font-size: 150px;
+                color: brown;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .soysauce2{
+            i{
+                position: absolute;
+                top: 3550px;
+                left: 100px;
+                font-size: 150px;
+                color: brown;
+                opacity: 0.5;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .egg{
+            i{
+                position: absolute;
+                top: 3550px;
+                right: 100px;
+                font-size: 150px;
+                color: burlywood;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .fried{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .fish{
+            i{
+                position: absolute;
+                top: 4050px;
+                left: 80px;
+                font-size: 150px;
+                color: lightcyan;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 3s;
+            }
+        }
+        .oil{
+            i{
+                position: absolute;
+                top: 4350px;
+                left: 100px;
+                font-size: 150px;
+                color: yellow;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .sea2{
+            i{
+                position: absolute;
+                top: 4350px;
+                right: 60px;
+                font-size: 150px;
+                color: lightblue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+    .fermented{
+        width: 100%;
+        margin: 50px 0 250px;
+        .des{
+            width: 1180px;
+            margin: 0 auto;
+            h2{
+                margin: 170px auto 70px;
+                font: bold 50px/1 "Noto Serif KR";
+                color: #888;
+                text-align: center;
+            }
+        }
+        .shrimp{
+            i{
+                position: absolute;
+                top: 4850px;
+                left: 80px;
+                font-size: 150px;
+                color: pink;
+                z-index: -1;
+                opacity: 0.8;
+                transition: 2.6s;
+            }
+        }
+        .time{
+            i{
+                position: absolute;
+                top: 5200px;
+                left: 100px;
+                font-size: 150px;
+                color: #999;
+                z-index: 1;
+                transform: scale(0);
+                transition: 0.4s;
+            }
+        }
+        .sea3{
+            i{
+                position: absolute;
+                top: 5150px;
+                right: 60px;
+                font-size: 150px;
+                color: lightblue;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 2s;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1179px) {
+    #cooking{
+        .spoon{
+            i{
+                font-size: 150px;
+            }
+        }
+        .bowl{
+            i{
+                left: 250px;
+                font-size: 100px;
+            }
+        }
+        .cook{
+            width: 100%;
+            font: normal 8px/1.8 "Noto Serif KR";
+        }
+        .forknife{
+            i{
+                font-size: 150px;
+            }
+        }
+        .boil{
+            margin: 100px 0 500px;
+            .des{
+                width: 100%;
+            }
+            .pork{
+                i{
+                    left: 10px;
+                    font-size: 100px;
+                }
+            }
+            .temp{
+                i{
+                    top: 1200px;
+                    left: 10px;
+                    font-size: 100px;
+                }
+            }
+            .water{
+                i{
+                    top: 1200px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+        .barbeque{
+            margin: 150px 0 300px;
+            .des{
+                width: 100%;
+            }
+            .pork2{
+                i{
+                    left: 10px;
+                    font-size: 100px;
+                }
+            }
+            .burn{
+                i{
+                    top: 1900px;
+                    left: 0px;
+                    font-size: 100px;
+                    
+                }
+            }
+            .fire{
+                i{
+                    top: 1900px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+        .pickling{
+            margin: 50px 0 300px;
+            .des{
+                width: 100%;
+            }
+            .crab{
+                img{
+                    left: 10px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .soysauce{
+                i{
+                    top: 2650px;
+                    left: 20px;
+                    font-size: 100px;
+                }
+            }
+            .sea{
+                i{
+                    top: 2650px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+        .braised{
+            margin: 50px 0 300px;
+            .des{
+                width: 100%;
+            }
+            .beef{
+                i{
+                    top: 3250px;
+                    left: 10px;
+                    font-size: 100px;
+                }
+            }
+            .soysauce2{
+                i{
+                    top: 3400px;
+                    left: 25px;
+                    font-size: 100px;
+                }
+            }
+            .egg{
+                i{
+                    top: 3400px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+        .fried{
+            margin: 50px 0 300px;
+            .des{
+                width: 100%;
+            }
+            .fish{
+                i{
+                    top: 4050px;
+                    left: 10px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .oil{
+                i{
+                    top: 4200px;
+                    left: 40px;
+                    font-size: 80px;
+                }
+            }
+            .sea2{
+                i{
+                    top: 4200px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+        .fermented{
+            margin: 50px 0 500px;
+            .des{
+                width: 100%;
+            }
+            .shrimp{
+                i{
+                    top: 4600px;
+                    left: 10px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .time{
+                i{
+                    top: 4900px;
+                    left: 20px;
+                    font-size: 100px;
+                }
+            }
+            .sea3{
+                i{
+                    top: 4800px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 330px) {
+    #cooking{
+        h1{
+            font: bold 25px/1 "궁서";
+        }
+        .spoon{
+            i{
+                font-size: 50px;
+            }
+        }
+        .bowl{
+            i{
+                left: 50px;
+                font-size: 100px;
+            }
+        }
+        .forknife{
+            i{
+                font-size: 50px;
+            }
+        }
+        .boil{
+            margin: 100px 0 400px;
+        }
+        .barbeque{
+            margin: 150px 0 200px;
+        }
+        .pickling{
+            margin: 50px 0 300px;
+        }
+        .braised{
+            margin: 50px 0 300px;
+        }
+        .fried{
+            margin: 50px 0 300px;
+        }
+        .fermented{
+            margin: 50px 0 500px;
+            .des{
+                width: 100%;
+            }
+            .shrimp{
+                i{
+                    top: 4600px;
+                    left: 10px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .time{
+                i{
+                    top: 4900px;
+                    left: 20px;
+                    font-size: 100px;
+                }
+            }
+            .sea3{
+                i{
+                    top: 4800px;
+                    right: 30px;
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 290px) {
+    #cooking{
+        .boil{
+            .des{
+                h2{
+                    font: bold 30px/1 "Noto Serif KR";
+                }
+            }
+            .pork{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .temp{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .water{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+        .barbeque{
+            .des{
+                h2{
+                    font: bold 30px/1 "Noto Serif KR";
+                }
+            }
+            .pork2{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .burn{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .fire{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+        .pickling{
+            margin: 50px 0 150px;
+            .des{
+                h2{
+                    font: bold 30px/1 "Noto Serif KR";
+                }
+            }
+            .crab{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .soysauce{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .sea{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+        .braised{
+            margin: 50px 0 150px;
+            .des{
+                h2{
+                    font: bold 30px/1 "Noto Serif KR";
+                }
+            }
+            .beef{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .soysauce2{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .egg{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+        .fried{
+            margin: 50px 0 100px;
+            .des{
+                h2{
+                    font: bold 30px/1 "Noto Serif KR";
+                }
+            }
+            .fish{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .oil{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .sea2{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+        .fermented{
+            margin: 20px 0 500px;
+            .des{
+                h2{
+                    font: bold 30px/1 "Noto Serif KR";
+                }
+            }
+            .shrimp{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .time{
+                i{
+                    font-size: 50px;
+                }
+            }
+            .sea3{
+                i{
+                    top: 5000px;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+}

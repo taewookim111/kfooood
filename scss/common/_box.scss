@@ -1,0 +1,349 @@
+#box{
+    width: 1180px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    .inner{
+        width: 100%;
+        height: 100%;
+        background-color: #F0EAD6;
+        h2{
+            position: relative;
+            top: 25px;
+            left: 150px;
+            font: bold 24px/1 "Noto Serif KR";
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        article{
+            width: 300px;
+            height: 350px;
+            position: relative;
+            left: 70px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 100px;
+                margin-bottom: 15px;
+            }
+            p{
+                font:bold 16px/1 "Noto Serif KR";
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        .pic{
+            width: 130px;
+            height: 400px;
+            float: right;
+            position: relative;
+            top: -25px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(1);
+                transition: 0.5s;
+            }
+            &:hover{
+                img{
+                    filter: brightness(1.1);
+                }
+            }
+        }
+        .pic2{
+            width: 200px;
+            height: 200px;
+            float: right;
+            position: relative;
+            top: -270px;
+            right: -100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid bisque;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(1);
+                transition: 0.5s;
+            }
+            &:hover{
+                img{
+                    filter: brightness(1.2);
+                }
+            }
+        }
+    }
+    a{
+        position: relative;
+        top: -55px;
+        left: 200px;
+        padding: 8px 40px;
+        border: 1px solid #fff;
+        color: grey;
+        background-color: mintcream;
+        font: bold 14px/1 "Noto Serif KR";
+        transition: 0.2s;
+        &:hover{
+            border: 1px solid #333;
+            color: #fff;
+            background-color: #333;
+        }
+    }
+}
+.aside{
+    width: 1180px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -400px;
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+    .inner{
+        width: 100%;
+        height: 100%;
+        background-color: #666;
+        .meal{
+            float: left;
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            margin: 20px;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+        div{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font: bold 32px/1 "Noto Serif KR";
+                color: #fff;
+                padding: 50px;
+            }
+            p{
+                font: bold 16px/1.7 "Noto Serif KR";
+                color: #fff;
+            }
+        }
+        .meal2{
+            position: relative;
+            top: -350px;
+            float: right;
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            margin: 20px;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+        i{
+            position: relative;
+            color: #fff;
+            top: -320px;
+            right: -480px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    &.on{
+        opacity: 1;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 1179px) {
+    #box{
+        width: 100%;
+        .inner{
+            article{
+                width: 23%;
+                i{
+                    font-size: 80px;
+                }
+                p{
+                    font:bold 12px/1 "Noto Serif KR";
+                }
+            }
+            .pic2{
+                top: 100px;
+                right: -70px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .aside{
+        width: 100%;
+        .inner{
+            .meal{
+                width: 15%;
+            }
+            div{
+                width: 45%;
+                p{
+                    width: 80%;
+                    font: bold 12px/1.7 "Noto Serif KR";
+                }
+            }
+            .meal2{
+                position: absolute;
+                top: -3px;
+                width: 23%;
+                right: 5px;
+            }
+            i{
+                position: relative;
+                color: #fff;
+                top: -220px;
+                left: 50%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 921px) {
+    #box{
+        width: 100%;
+        .inner{
+            article{
+                width: 23%;
+                i{
+                    font-size: 50px;
+                }
+                p{
+                    width: 35%;
+                    font:bold 1.5vw/1.2 "Noto Serif KR";
+                }
+                &:nth-of-type(2)
+                {
+                    left: 30px;
+                }
+                &:nth-of-type(3){
+                    left: 10px;
+                }
+            }
+            .pic2{
+                top: -250px;
+                right: -70px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .aside{
+        width: 100%;
+        .inner{
+            i{
+                position: relative;
+                color: #fff;
+                top: -280px;
+                left: 45%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 743px) {
+    #box{
+        .inner{
+            .pic2{
+                top: 130px;
+                right: -40px;
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+    .aside{
+        width: 100%;
+        .inner{
+            div{
+                height: 400px;
+                h2{
+                    padding: 3px;
+                    margin-bottom: 8px;
+                    font: bold 20px/1 "Noto Serif KR";
+                }
+            }
+            i{
+                position: relative;
+                color: #fff;
+                top: -380px;
+                left: 97%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 452px) {
+    #box{
+        .inner{
+            h2{
+                left: 20px;
+                font: bold 12px/1 "Noto Serif KR";
+            }
+            article{
+                p{
+                    width: 40px;
+                    font:bold 8px/1 "Noto Serif KR";
+                }
+                &:nth-of-type(1){
+                    left: 30px;
+                }
+                &:nth-of-type(3){
+                    left: 40px;
+                }
+                i{
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+            .pic{
+                width: 8%;
+                height: 420px;
+            }
+            .pic2{
+                top: 130px;
+                right: -20px;
+                width: 80px;
+                height: 80px;
+            }
+        }
+        a{
+            padding: 8px 0px;
+            left: 20px;
+            font: bold 8px/1 "Noto Serif KR";
+        }
+    }
+    .aside{
+        .inner{
+            div{
+                h2{
+                    font: bold 15px/1 "Noto Serif KR";
+                    z-index: 3;
+                    top: -20px;
+                }
+                p{
+                    position: relative;
+                    left: -20px;
+                    font: bold 8px/1.3 "Noto Serif KR";
+                    z-index: 3;
+                }
+            }
+            i{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                color: #333;
+            }
+        }
+    } 
+}

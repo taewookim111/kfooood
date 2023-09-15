@@ -1,0 +1,163 @@
+#news{
+    width: 100%;
+    padding: 200px 0px;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        h1{
+            font: bold 44px/1 "arial";
+            color: #333;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .wrap{
+            width: 100%;
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            article{
+                width: 280px;
+                float: left;
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                .pic{
+                    width: 100%;
+                    height: 140px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    transition: 0.5s;
+                    &:hover{
+                        img{
+                            opacity: 0;
+                        }
+                        .pic2{
+                            z-index: 1;
+                            opacity: 1;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: 0.5s;
+                        opacity: 1;
+                    }
+                    .pic2{
+                        position: relative;
+                        top: -144px;
+                        border-radius: 10px;
+                        z-index: -1;
+                        transition: 0.5s;
+                        opacity: 0;
+                    }
+                }
+                h2{
+                    margin-bottom: 10px;
+                    font: bold 20px/1 "arial"; 
+                }
+                p{
+                    font: 14px/1.3 "Noto Serif KR";
+                    color: #111;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1179px){
+    #news{
+        padding: 100px 20px;
+        .inner{
+            width: 100%;
+            h1{
+                font: bold 24px/1 "arial";
+            }
+            .wrap{
+                article{
+                    width: 49%;
+                    margin-right: 2%;
+                    margin-bottom: 20px;
+                    &:nth-of-type(2),
+                    &:nth-of-type(4)
+                    {
+                        margin-right: 0%;
+                    }
+                    .pic{
+                        height: 20vh;
+                        .pic2{
+                            top: -194px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    #news{
+        .inner{
+            .wrap{
+                article{
+                    width: 100%;
+                    margin-right: 0%;
+                    .pic{
+                        height: 30vh;
+                        .pic2{
+                            top: -294px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px){
+    #news{
+        .inner{
+            .wrap{
+                article{
+                    width: 100%;
+                    margin-right: 0%;
+                    .pic{
+                        height: 15vh;
+                        .pic2{
+                            top: -154px;
+                        }
+                    }
+                    h2{
+                        margin-bottom: 5px;
+                        font: bold 16px/1 "arial"; 
+                    }
+                    p{
+                        font: 12px/1.3 "Noto Serif KR";
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-height: 900px){
+    #news{
+        .inner{
+            .wrap{
+                article{
+                    .pic{
+                        .pic2{
+                            width: 500px;
+                            height: 500px;
+                            top: -350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+            
