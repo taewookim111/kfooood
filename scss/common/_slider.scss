@@ -128,62 +128,7 @@
         }
     }
 }
-@media screen and (max-width: 940px){
-    #slider{
-        .title{
-            font: bold 45px/1 "arial";
-        }
-        .panel{
-            li{
-                h2{
-                    font: bold 120px/1 "Noto Serif KR";
-                    top: 80px;
-                }
-                p{
-                    font: bold 70px/1 "Noto Serif KR";
-                    bottom: 170px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 690px){
-    #slider{
-        height: 300px;
-        .title{
-            font: bold 45px/1 "arial";
-        }
-        .panel{
-            li{
-                h2{
-                    font: bold 100px/1 "Noto Serif KR";
-                    top: 20px;
-                    margin-left: 20%;
-                }
-                p{
-                    font: bold 50px/1 "Noto Serif KR";
-                    bottom: 100px;
-                    margin-left: 17%;
-                }
-                &:nth-of-type(2){
-                    h2{
-                        margin-left: 10%;
-                    }
-                    p{
-                        bottom: 100px;
-
-                    }
-                }
-                &:nth-of-type(3){
-                    p{
-                        bottom: 100px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 490px){
+@media screen and (max-width: 360px){
     #slider{
         height: 300px;
         .title{

@@ -180,7 +180,7 @@ header .inner .menuMo.on {
     display: block;
   }
 }
-@media screen and (max-width: 316px) {
+@media screen and (max-width: 360px) {
   header .inner h1 a {
     font: bold 20px/60px "arial";
     color: #000;
@@ -317,47 +317,7 @@ header .inner .menuMo.on {
     bottom: 180px;
   }
 }
-@media screen and (max-width: 940px) {
-  #slider .title {
-    font: bold 45px/1 "arial";
-  }
-  #slider .panel li h2 {
-    font: bold 120px/1 "Noto Serif KR";
-    top: 80px;
-  }
-  #slider .panel li p {
-    font: bold 70px/1 "Noto Serif KR";
-    bottom: 170px;
-  }
-}
-@media screen and (max-width: 690px) {
-  #slider {
-    height: 300px;
-  }
-  #slider .title {
-    font: bold 45px/1 "arial";
-  }
-  #slider .panel li h2 {
-    font: bold 100px/1 "Noto Serif KR";
-    top: 20px;
-    margin-left: 20%;
-  }
-  #slider .panel li p {
-    font: bold 50px/1 "Noto Serif KR";
-    bottom: 100px;
-    margin-left: 17%;
-  }
-  #slider .panel li:nth-of-type(2) h2 {
-    margin-left: 10%;
-  }
-  #slider .panel li:nth-of-type(2) p {
-    bottom: 100px;
-  }
-  #slider .panel li:nth-of-type(3) p {
-    bottom: 100px;
-  }
-}
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 360px) {
   #slider {
     height: 300px;
   }
@@ -591,68 +551,7 @@ header .inner .menuMo.on {
     left: 50%;
   }
 }
-@media screen and (max-width: 921px) {
-  #box {
-    width: 100%;
-  }
-  #box .inner article {
-    width: 23%;
-  }
-  #box .inner article i {
-    font-size: 50px;
-  }
-  #box .inner article p {
-    width: 35%;
-    font: bold 1.5vw/1.2 "Noto Serif KR";
-  }
-  #box .inner article:nth-of-type(2) {
-    left: 30px;
-  }
-  #box .inner article:nth-of-type(3) {
-    left: 10px;
-  }
-  #box .inner .pic2 {
-    top: -250px;
-    right: -70px;
-    width: 150px;
-    height: 150px;
-  }
-  .aside {
-    width: 100%;
-  }
-  .aside .inner i {
-    position: relative;
-    color: #fff;
-    top: -280px;
-    left: 45%;
-  }
-}
-@media screen and (max-width: 743px) {
-  #box .inner .pic2 {
-    top: 130px;
-    right: -40px;
-    width: 80px;
-    height: 80px;
-  }
-  .aside {
-    width: 100%;
-  }
-  .aside .inner div {
-    height: 400px;
-  }
-  .aside .inner div h2 {
-    padding: 3px;
-    margin-bottom: 8px;
-    font: bold 20px/1 "Noto Serif KR";
-  }
-  .aside .inner i {
-    position: relative;
-    color: #fff;
-    top: -380px;
-    left: 97%;
-  }
-}
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 360px) {
   #box .inner h2 {
     left: 20px;
     font: bold 12px/1 "Noto Serif KR";
@@ -769,33 +668,15 @@ footer .inner p {
     float: auto;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 360px) {
   footer {
-    padding: 80px 5px;
+    padding: 0px;
   }
-  footer .inner h1 {
-    font: bold 14px/"arial";
-    margin-bottom: 20px;
-  }
-  footer .inner ul {
-    float: left;
-  }
-  footer .inner ul li a {
-    padding: 30px 5px;
-  }
-  footer .inner address {
-    font: 11px/1.3 "arial";
-  }
-  footer .inner p {
-    font: 9px/1 "arial";
-  }
-}
-@media screen and (max-width: 397px) {
   footer .inner ul {
     gap: 2px;
   }
   footer .inner ul li a {
-    font: bold 2.1px/30px "Noto Serif KR";
+    font: bold 6px/1px "Noto Serif KR";
   }
   footer .inner address {
     font: 11px/1.3 "arial";
@@ -1868,119 +1749,7 @@ body #process .next {
     width: 520px;
   }
 }
-@media screen and (max-width: 650px) {
-  body #kimchi .inner1 {
-    width: 100%;
-  }
-  body #kimchi .inner1 h1 {
-    margin-bottom: 10px;
-  }
-  body #kimchi .inner1 img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-  }
-  body #kimchi .inner1 img[data-index="1"] {
-    left: 10px;
-  }
-  body #kimchi .inner1 img[data-index="2"] {
-    top: 200px;
-    right: 10px;
-  }
-  body #kimchi .inner1 .txt p {
-    font: bold 13px/1.7 "Noto Serif KR";
-    margin-bottom: 10px;
-  }
-  body #kimchi .banner h2 {
-    top: 700px;
-    font: bold 50px/1 "arial";
-  }
-  body #kimchi .banner .inner3 {
-    width: 100%;
-  }
-  body #kimchi .banner .inner3 p {
-    font: normal 1.5vw/1.3 "Noto Serif KR";
-  }
-  body #map div h2 {
-    left: 100px;
-    font: bold 2.2vw/1 "Noto Serif KR";
-    margin-bottom: 10px;
-  }
-  body #map div h3 {
-    position: absolute;
-    font: normal 2vw/1 "Nanum Myeongjo";
-  }
-  body #map div img {
-    width: 10%;
-  }
-  body #map div .pic {
-    width: 10%;
-  }
-  body #map .left {
-    position: absolute;
-    left: -1000px;
-  }
-  body #map .left h2 {
-    bottom: 100px;
-  }
-  body #map .left h3 {
-    bottom: 100px;
-  }
-  body #map .right h2 {
-    left: 50px;
-    bottom: 100px;
-  }
-  body #map .right h3 {
-    bottom: 100px;
-  }
-  body #map .left1 {
-    position: absolute;
-    left: -1000px;
-  }
-  body #map .left1 h2 {
-    left: 100px;
-    bottom: 100px;
-  }
-  body #map .left1 h3 {
-    right: 20px;
-    bottom: 100px;
-  }
-  body #map .right1 {
-    right: -2100px;
-  }
-  body #map .right1 h2 {
-    bottom: 100px;
-  }
-  body #map .right1 h3 {
-    bottom: 100px;
-  }
-  body #map .right1 .pic {
-    width: 10%;
-  }
-  body #map .left2 {
-    left: -1000px;
-  }
-  body #map .left2 h2 {
-    left: 100px;
-    bottom: 100px;
-  }
-  body #map .left2 h3 {
-    bottom: 100px;
-  }
-  body #map .left2 .pic {
-    width: 10%;
-  }
-  body #process .panel2 li .text {
-    width: 230px;
-    height: 80px;
-    font: bold 16px/1 "Noto Serif KR";
-    left: 60px;
-  }
-  body #process .panel2 li .text1 {
-    font: normal 8px/1.2 "Noto Serif KR";
-  }
-}
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 360px) {
   body #kimchi .inner1 h1 {
     font: bold 36px/1 "Noto Serif KR";
   }
@@ -2793,7 +2562,7 @@ body #process .next {
   transition: 0.6s;
 }
 #ingredient .map2:hover iframe {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 #ingredient .airport1 {
   position: relative;
@@ -2836,7 +2605,7 @@ body #process .next {
   font: bold 60px/1 "Nanum Myeongjo";
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1179px) {
   #ingredient .inner {
     width: 100%;
   }
@@ -2886,67 +2655,49 @@ body #process .next {
     left: 20px;
     font: bold 1.2vw/1.6 "Noto Serif KR";
   }
-}
-@media screen and (max-width: 800px) {
-  #ingredient h1 {
-    font: bold 12vw/1 "Nanum Myeongjo";
+  #ingredient .museum1 {
+    left: 5px;
+    font: bold 3.5vw/1 "Nanum Myeongjo";
   }
-  #ingredient .inner {
-    margin: 200px auto;
-  }
-  #ingredient .inner:nth-of-type(2) {
-    margin: 0 auto;
-  }
-  #ingredient .inner:nth-of-type(2) .hidden {
-    left: 40%;
-  }
-  #ingredient .inner:nth-of-type(3) {
-    margin: 200px auto;
-  }
-  #ingredient .inner:nth-of-type(3) .text {
-    position: relative;
-    top: 0px;
+  #ingredient .museum2 {
     left: 10px;
+    font: bold 3.5vw/1 "Nanum Myeongjo";
+  }
+  #ingredient .map1 {
+    width: 100%;
+  }
+  #ingredient .palace1 {
+    left: 5px;
+    font: bold 3.5vw/1 "Nanum Myeongjo";
+  }
+  #ingredient .palace2 {
+    left: 10px;
+    font: bold 3.5vw/1 "Nanum Myeongjo";
+  }
+  #ingredient .map2 {
+    width: 100%;
+  }
+  #ingredient .airport1 {
+    left: 5px;
+    font: bold 3.5vw/1 "Nanum Myeongjo";
+  }
+  #ingredient .airport2 {
+    left: 10px;
+    font: bold 3.5vw/1 "Nanum Myeongjo";
+  }
+  #ingredient .map3 {
+    width: 90%;
+  }
+  #ingredient .trip {
+    font: bold 4vw/1 "Nanum Myeongjo";
   }
 }
-@media screen and (max-width: 600px) {
-  #ingredient .inner {
-    transform: rotate(0deg);
+@media screen and (max-width: 360px) {
+  #ingredient h1 {
+    font: bold 5.5vw/1 "Nanum Myeongjo";
   }
-  #ingredient .inner .hidden {
-    width: 200px;
-    height: 200px;
-  }
-  #ingredient .inner .text {
-    position: relative;
-    left: -80px;
-    font: bold 1vw/1.2 "Noto Serif KR";
-    transform: rotate(2deg);
-  }
-  #ingredient .inner:nth-of-type(2) {
-    transform: rotate(0deg);
-  }
-  #ingredient .inner:nth-of-type(2) .hidden {
-    width: 200px;
-    height: 200px;
-  }
-  #ingredient .inner:nth-of-type(2) .text {
-    position: relative;
-    left: 30px;
-    font: bold 1vw/1.2 "Noto Serif KR";
-    transform: rotate(-2deg);
-  }
-  #ingredient .inner:nth-of-type(3) {
-    transform: rotate(0deg);
-  }
-  #ingredient .inner:nth-of-type(3) .text {
-    position: relative;
-    left: -40px;
-    font: bold 1vw/1.2 "Noto Serif KR";
-  }
-  #ingredient .inner:nth-of-type(3) .hidden {
-    width: 200px;
-    height: 200px;
+  #ingredient .map1 iframe {
+    border-radius: 150px;
   }
 }
 body {

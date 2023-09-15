@@ -173,7 +173,7 @@
         }
         &:hover{
             iframe{
-                opacity: 0.9;
+                opacity: 0.8;
             }
         }
     }
@@ -220,7 +220,7 @@
         font: bold 60px/1 "Nanum Myeongjo";
     }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1179px) {
     #ingredient{
         .inner{
             width: 100%;
@@ -271,70 +271,53 @@
                 }
             }
         }
+        .museum1{
+            left: 5px;
+            font: bold 3.5vw/1 "Nanum Myeongjo";
+        }
+        .museum2{
+            left: 10px;
+            font: bold 3.5vw/1 "Nanum Myeongjo";
+        }
+        .map1{
+            width: 100%;
+        }
+        .palace1{
+            left: 5px;
+            font: bold 3.5vw/1 "Nanum Myeongjo";
+        }
+        .palace2{
+            left: 10px;
+            font: bold 3.5vw/1 "Nanum Myeongjo";
+        }
+        .map2{
+            width: 100%;
+        }
+        .airport1{
+            left: 5px;
+            font: bold 3.5vw/1 "Nanum Myeongjo";
+        }
+        .airport2{
+            left: 10px;
+            font: bold 3.5vw/1 "Nanum Myeongjo";
+        }
+        .map3{
+            width: 90%;
+        }
+        .trip{
+            font: bold 4vw/1 "Nanum Myeongjo";
+        }
     }
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 360px) {
     #ingredient{
         h1{
-            font: bold 12vw/1 "Nanum Myeongjo";
+            font: bold 5.5vw/1 "Nanum Myeongjo";
         }
-        .inner{
-            margin: 200px auto;
-            &:nth-of-type(2){
-                margin: 0 auto;
-                .hidden{
-                    left: 40%;
-                }
-            }
-            &:nth-of-type(3){
-                margin: 200px auto;
-                .text{
-                    position: relative;
-                    top: 0px;
-                    left: 10px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 600px) {
-    #ingredient{
-        .inner{
-            transform: rotate(0deg);
-            .hidden{
-                width: 200px;
-                height: 200px;
-            }
-            .text{
-                position: relative;
-                left: -80px;
-                font: bold 1vw/1.2 "Noto Serif KR";
-                transform: rotate(2deg);
-            }
-            &:nth-of-type(2){
-                transform: rotate(0deg);
-                .hidden{
-                    width: 200px;
-                    height: 200px;
-                }
-                .text{
-                    position: relative;
-                    left: 30px;
-                    font: bold 1vw/1.2 "Noto Serif KR";
-                    transform: rotate(-2deg);
-                }
-            }
-            &:nth-of-type(3){
-                transform: rotate(0deg);
-                .text{
-                    position: relative;
-                    left: -40px;
-                    font: bold 1vw/1.2 "Noto Serif KR";
-                }
-                .hidden{
-                    width: 200px;
-                    height: 200px;
-                }
+        .map1{
+            iframe{
+                border-radius: 150px;
             }
         }
     }
