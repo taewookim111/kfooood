@@ -1,204 +1,210 @@
-header {
-    width: 1180px;
-    height: 60px;
-    position: relative;
-    margin: 0 auto;
-    .inner{
-        width: 100%;
-        height: 100%;
-        h1{
-            position: relative;
-            left: 1%;
-            a{
-                font: bold 24px/60px "arial";
-                color: #000;
-            }
-        }
-        .menuWeb{
-            transition: 1s;
-            #gnb{
-                position: absolute;
-                left: 350px;
-                bottom: 7px;
-                &::after{
-                    content: '';
-                    display: block;
-                    clear: both;
+body{
+    header {
+        width: 1180px;
+        height: 60px;
+        position: relative;
+        margin: 0 auto;
+        .inner{
+            width: 100%;
+            height: 100%;
+            h1{
+                position: relative;
+                left: 1%;
+                a{
+                    font: bold 24px/60px "arial";
+                    color: #000;
                 }
-                li{
-                    float: left;
-                    a{
+            }
+            .menuWeb{
+                transition: 1s;
+                #gnb{
+                    position: absolute;
+                    left: 350px;
+                    bottom: 7px;
+                    &::after{
+                        content: '';
                         display: block;
-                        padding: 15px 30px;
-                        font: bold 16px/1 "Noto Serif KR";
-                        color: #111;
-                        &:hover{
-                            background-color: #444;
-                            color: #fff;
-                            opacity: 0.8;
+                        clear: both;
+                    }
+                    li{
+                        float: left;
+                        a{
+                            display: block;
+                            padding: 15px 30px;
+                            font: bold 16px/1 "Noto Serif KR";
+                            color: #111;
+                            &:hover{
+                                background-color: #444;
+                                color: #fff;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+                .util{
+                    position: absolute;
+                    top: 18px;
+                    right: 40px;
+                    li{
+                        a{
+                            font:bold 14px/1 "Noto Serif KR";
+                            color: #000;
                         }
                     }
                 }
             }
-            .util{
-                position: absolute;
-                top: 18px;
-                right: 40px;
-                li{
-                    a{
-                        font:bold 14px/1 "Noto Serif KR";
-                        color: #000;
-                    }
-                }
-            }
-        }
-        .btnCall{
-            position: absolute;
-            top: 50%;
-            right: 30px;
-            transform: translateY(-50%);
-            display: none;
-            width: 20px;
-            height: 20px;
-
-            &::before{
-                content: '';
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: #000;
-                position: absolute;
-                top: 0;
-                left: 0;
-                transition: top 0.5s 0s, transform 0.5s 0.5s;
-            }
-            &::after{
-                content: '';
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: #000;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                transition: bottom 0.5s 0s, transform 0.5s 0.5s;
-            }
-            span{
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: #000;
+            .btnCall{
                 position: absolute;
                 top: 50%;
-                left: 0;
-                margin-top: -1px;
-                text-indent: -999999999px;
-                transition: 0.5s;
-            }
-            &.on{
+                right: 30px;
+                transform: translateY(-50%);
+                display: none;
+                width: 20px;
+                height: 20px;
+    
                 &::before{
-                    top: 50%;
-                    margin-top: -1px;
-                    transform: rotate(45deg);
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #000;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: top 0.5s 0s, transform 0.5s 0.5s;
                 }
                 &::after{
-                    bottom: 50%;
-                    margin-bottom: -1px;
-                    transform: rotate(-45deg);
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #000;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: bottom 0.5s 0s, transform 0.5s 0.5s;
                 }
                 span{
-                    transform: translateX(100%);
-                    opacity: 0;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #000;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -1px;
+                    text-indent: -999999999px;
+                    transition: 0.5s;
                 }
-    
+                &.on{
+                    &::before{
+                        top: 50%;
+                        margin-top: -1px;
+                        transform: rotate(45deg);
+                    }
+                    &::after{
+                        bottom: 50%;
+                        margin-bottom: -1px;
+                        transform: rotate(-45deg);
+                    }
+                    span{
+                        transform: translateX(100%);
+                        opacity: 0;
+                    }
+        
+                }
             }
-        }
-        .menuMo{
-            position: fixed;
-            width: 230px;
-            height: 100vh;
-            top: 0;
-            left: -230px;
-            background-color: brown;
-            z-index: 2;
-            transition: 0.5s;
-            h2{
-                position: absolute;
-                top: 38px;
-                left: 60px;
-            a{
-                font: bold 28px/60px "arial";
-                color: #fff;
-            }
-            }
-            #gnbMo{
-                position: absolute;
-                top: 150px;
-                left: 60px;
-                li{
-                    margin-bottom: 35px;
-                    a{
-                        font: bold 17px/1.7 "Noto Serif KR";
-                        color: #fff;
-                        text-align: center;
+            .menuMo{
+                position: fixed;
+                width: 230px;
+                height: 100vh;
+                top: 0;
+                left: -230px;
+                background-color: brown;
+                z-index: 2;
+                transition: 0.5s;
+                h2{
+                    position: absolute;
+                    top: 38px;
+                    left: 60px;
+                a{
+                    font: bold 28px/60px "arial";
+                    color: #fff;
+                }
+                }
+                #gnbMo{
+                    position: absolute;
+                    top: 150px;
+                    left: 60px;
+                    li{
+                        margin-bottom: 35px;
+                        a{
+                            font: bold 17px/1.7 "Noto Serif KR";
+                            color: #fff;
+                            text-align: center;
+                        }
                     }
                 }
-            }
-            &.on{
-                left: 0;
+                &.on{
+                    left: 0;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 1179px) {
-    header {
-        width: 100%;
-        .inner{
-            padding: 0 20px;
-            h1{
-                a{
-                    font: bold 20px/60px "arial";
-                    color: #000;
+    body{
+        header {
+            width: 100%;
+            .inner{
+                padding: 0 20px;
+                h1{
+                    a{
+                        font: bold 20px/60px "arial";
+                        color: #000;
+                    }
                 }
-            }
-            .menuWeb{
-                display: none;
-            }
-            .btnCall{
-                display: block;
+                .menuWeb{
+                    display: none;
+                }
+                .btnCall{
+                    display: block;
+                }
             }
         }
     }
 }
 @media screen and (max-width: 360px) {
-    header {
-        .inner{
-            h1{
-                a{
-                    font: bold 20px/60px "arial";
-                    color: #000;
-                }
-            }
-            .btnCall{
-                right: 8px;
-            }
-            .menuMo{
-                width: 140px;
-                h2{
-                    left: 20px;
-                a{
-                    font: bold 26px/60px "arial";
-                }
-                }
-                #gnbMo{
-                    top: 130px;
-                    left: 20px;
-                    li{     
-                            font: bold 12px/1.7 "Noto Serif KR";
-                        }
+    body{
+        header {
+            .inner{
+                h1{
+                    a{
+                        font: bold 20px/60px "arial";
+                        color: #000;
                     }
                 }
+                .btnCall{
+                    right: 8px;
+                }
+                .menuMo{
+                    width: 140px;
+                    h2{
+                        left: 20px;
+                    a{
+                        font: bold 26px/60px "arial";
+                    }
+                    }
+                    #gnbMo{
+                        top: 130px;
+                        left: 20px;
+                        li{     
+                                font: bold 12px/1.7 "Noto Serif KR";
+                            }
+                        }
+                    }
+            }
         }
     }
 }

@@ -1,83 +1,44 @@
-#ingredient{
-    width: 100%;
-    background-color: burlywood;
-    padding: 100px 0;
-    h1{
-        text-align: center;
-        margin: 0 auto 100px;
-        font: bold 70px/1 "Nanum Myeongjo";
-        color: #555;
-    }
-    .inner{
-        width: 1180px;
-        margin: 250px auto 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: seagreen;
-        border-radius: 10px;
-        padding: 20px;
-        transform: rotate(30deg);
-        border-radius: 150px;
-        .mask{
-            width: 500px;
-            height: 600px;
-            object-fit: cover;
-            -webkit-mask-box-image: url(../img/sealeaf.svg);
-            transform: rotate(-10deg);
-            opacity: 0;
-            z-index: 0;
-            transition: 0.5s;
-            cursor: pointer;
-            &.on{
-                opacity: 1;
-                z-index: 1;
-            }
+body{
+    #ingredient{
+        width: 100%;
+        background-color: burlywood;
+        padding: 100px 0;
+        h1{
+            text-align: center;
+            margin: 0 auto 100px;
+            font: bold 70px/1 "Nanum Myeongjo";
+            color: #555;
         }
-        .hidden{
-            position: absolute;
-            left: 30px;
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            object-fit: cover;
-            opacity: 0;
-            z-index: -1;
-            transition: 0.5s;
-            cursor: pointer;
-            &.on{
-                opacity: 1;
-                z-index: 1;
-            }
-        }
-        .text{
+        .inner{
+            width: 1180px;
+            margin: 250px auto 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: seagreen;
+            border-radius: 10px;
             padding: 20px;
-            right: 10px;
-            transform: rotate(-30deg);
-            font: bold 16px/1.5 "Noto Serif KR";
-            color: #fff;
-            z-index: 2;
-        }
-        &:nth-of-type(2){
-            margin: 500px auto;
-            transform: rotate(-30deg);
-            background-color: palevioletred;
+            transform: rotate(30deg);
+            border-radius: 150px;
             .mask{
-                -webkit-mask-box-image: url(../img/drumstick.svg);
-                transform: rotate(-5deg);
+                width: 500px;
+                height: 600px;
+                object-fit: cover;
+                -webkit-mask-box-image: url(../img/sealeaf.svg);
+                transform: rotate(-10deg);
                 opacity: 0;
-                z-index: -1;
+                z-index: 0;
                 transition: 0.5s;
                 cursor: pointer;
                 &.on{
-                opacity: 1;
-                z-index: 1;
-            }
+                    opacity: 1;
+                    z-index: 1;
+                }
             }
             .hidden{
                 position: absolute;
-                left: 60%;
+                left: 30px;
                 width: 400px;
                 height: 400px;
                 border-radius: 50%;
@@ -92,232 +53,277 @@
                 }
             }
             .text{
-                transform: rotate(30deg);
-            }
-        }
-        &:nth-of-type(3){
-            margin: 200px auto 300px;
-            background-color: brown;
-            .mask{
-                width: 400px;
-                height: 700px;
-                -webkit-mask-box-image: url(../img/jar.svg);
-                transform: rotate(0deg);
-                left: 30px;
-                position: relative;
-            } 
-            .hidden{
-                transform: rotate(-35deg);
-            }
-            .text{
-                position: relative;
-                top: 50px;
-                left: 50px;
-                font: bold 14px/1.5 "Noto Serif KR";
-            }
-        }
-    }
-    .museum1{
-        position: relative;
-        left: 250px;
-        font: bold 56px/1 "Nanum Myeongjo";
-        color: #666;
-    }
-    .museum2{
-        position: relative;
-        left: 500px;
-        font: bold 56px/1 "Nanum Myeongjo";
-        color: #666;
-    }
-    .map1{
-        width: 1180px;
-        margin: 50px auto 150px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(red, darkblue);
-        padding: 20px;
-        border-radius: 150px;
-        iframe{
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-    .palace1{
-        position: relative;
-        left: 700px;
-        font: bold 56px/1 "Nanum Myeongjo";
-        color: #666;
-    }
-    .palace2{
-        position: relative;
-        left: 350px;
-        font: bold 56px/1 "Nanum Myeongjo";
-        color: #666;
-    }
-    .map2{
-        width: 1180px;
-        margin: 50px auto 150px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: url(../img/조선국기.svg) no-repeat center/cover;
-        padding: 20px;
-        border-radius: 5px;
-        iframe{
-            width: 80%;
-            margin: 0 auto;
-            transition: 0.6s;
-        }
-        &:hover{
-            iframe{
-                opacity: 0.8;
-            }
-        }
-    }
-    .airport1{
-        position: relative;
-        left: 250px;
-        font: bold 56px/1 "Nanum Myeongjo";
-        color: #666;
-    }
-    .airport2{
-        position: relative;
-        left: 500px;
-        font: bold 56px/1 "Nanum Myeongjo";
-        color: #666;
-    }
-    .map3{
-        width: 1180px;
-        margin: 50px auto 1000px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: mintcream;
-        padding: 20px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        transition: 1s;
-        iframe{
-            width: 80%;
-            margin: 0 auto;
-            transition: 0.6s;
-            background-color: #50bddf;
-            border-top-left-radius: 50%;
-            border-bottom-left-radius: 50%;
-        }
-        &:hover{
-            iframe{
-                opacity: 0.6;
-            }
-        }
-    }
-    .trip{
-        margin: 0px auto 100px;
-        font: bold 60px/1 "Nanum Myeongjo";
-    }
-}
-@media screen and (max-width: 1179px) {
-    #ingredient{
-        .inner{
-            width: 100%;
-            .mask{
-                width: 50%;
-                height: 50%;
-                object-fit: cover;
-                -webkit-mask-box-image: url(../img/sealeaf.svg);
-                transform: rotate(-10deg);
-            }
-            .text{
                 padding: 20px;
+                right: 10px;
                 transform: rotate(-30deg);
-                font: bold 1.1vw/1.6 "Noto Serif KR";
+                font: bold 16px/1.5 "Noto Serif KR";
                 color: #fff;
+                z-index: 2;
             }
             &:nth-of-type(2){
                 margin: 500px auto;
                 transform: rotate(-30deg);
+                background-color: palevioletred;
                 .mask{
-                    width: 50%;
-                    height: 50%;
                     -webkit-mask-box-image: url(../img/drumstick.svg);
                     transform: rotate(-5deg);
+                    opacity: 0;
+                    z-index: -1;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &.on{
+                    opacity: 1;
+                    z-index: 1;
+                }
                 }
                 .hidden{
-                    left: 50%;
+                    position: absolute;
+                    left: 60%;
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &.on{
+                        opacity: 1;
+                        z-index: 1;
+                    }
                 }
                 .text{
                     transform: rotate(30deg);
                 }
             }
             &:nth-of-type(3){
-                margin: 200px auto;
+                margin: 200px auto 300px;
+                background-color: brown;
                 .mask{
-                    width: 50%;
-                    height: 50%;
+                    width: 400px;
+                    height: 700px;
                     -webkit-mask-box-image: url(../img/jar.svg);
-                    transform: rotate(-10deg);
+                    transform: rotate(0deg);
                     left: 30px;
                     position: relative;
-                }  
+                } 
+                .hidden{
+                    transform: rotate(-35deg);
+                }
                 .text{
                     position: relative;
-                    top: 40px;
-                    left: 20px;
-                    font: bold 1.2vw/1.6 "Noto Serif KR";
+                    top: 50px;
+                    left: 50px;
+                    font: bold 14px/1.5 "Noto Serif KR";
                 }
             }
         }
         .museum1{
-            left: 5px;
-            font: bold 3.5vw/1 "Nanum Myeongjo";
+            position: relative;
+            left: 250px;
+            font: bold 56px/1 "Nanum Myeongjo";
+            color: #666;
         }
         .museum2{
-            left: 10px;
-            font: bold 3.5vw/1 "Nanum Myeongjo";
+            position: relative;
+            left: 500px;
+            font: bold 56px/1 "Nanum Myeongjo";
+            color: #666;
         }
         .map1{
-            width: 100%;
+            width: 1180px;
+            margin: 50px auto 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(red, darkblue);
+            padding: 20px;
+            border-radius: 150px;
+            iframe{
+                width: 80%;
+                margin: 0 auto;
+            }
         }
         .palace1{
-            left: 5px;
-            font: bold 3.5vw/1 "Nanum Myeongjo";
+            position: relative;
+            left: 700px;
+            font: bold 56px/1 "Nanum Myeongjo";
+            color: #666;
         }
         .palace2{
-            left: 10px;
-            font: bold 3.5vw/1 "Nanum Myeongjo";
+            position: relative;
+            left: 350px;
+            font: bold 56px/1 "Nanum Myeongjo";
+            color: #666;
         }
         .map2{
-            width: 100%;
+            width: 1180px;
+            margin: 50px auto 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: url(../img/조선국기.svg) no-repeat center/cover;
+            padding: 20px;
+            border-radius: 5px;
+            iframe{
+                width: 80%;
+                margin: 0 auto;
+                transition: 0.6s;
+            }
+            &:hover{
+                iframe{
+                    opacity: 0.8;
+                }
+            }
         }
         .airport1{
-            left: 5px;
-            font: bold 3.5vw/1 "Nanum Myeongjo";
+            position: relative;
+            left: 250px;
+            font: bold 56px/1 "Nanum Myeongjo";
+            color: #666;
         }
         .airport2{
-            left: 10px;
-            font: bold 3.5vw/1 "Nanum Myeongjo";
+            position: relative;
+            left: 500px;
+            font: bold 56px/1 "Nanum Myeongjo";
+            color: #666;
         }
         .map3{
-            width: 90%;
+            width: 1180px;
+            margin: 50px auto 1000px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: mintcream;
+            padding: 20px;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            transition: 1s;
+            iframe{
+                width: 80%;
+                margin: 0 auto;
+                transition: 0.6s;
+                background-color: #50bddf;
+                border-top-left-radius: 50%;
+                border-bottom-left-radius: 50%;
+            }
+            &:hover{
+                iframe{
+                    opacity: 0.6;
+                }
+            }
         }
         .trip{
-            font: bold 4vw/1 "Nanum Myeongjo";
+            margin: 0px auto 100px;
+            font: bold 60px/1 "Nanum Myeongjo";
+        }
+    }
+}
+@media screen and (max-width: 1179px) {
+    body{
+        #ingredient{
+            .inner{
+                width: 100%;
+                .mask{
+                    width: 50%;
+                    height: 50%;
+                    object-fit: cover;
+                    -webkit-mask-box-image: url(../img/sealeaf.svg);
+                    transform: rotate(-10deg);
+                }
+                .text{
+                    padding: 20px;
+                    transform: rotate(-30deg);
+                    font: bold 1.1vw/1.6 "Noto Serif KR";
+                    color: #fff;
+                }
+                &:nth-of-type(2){
+                    margin: 500px auto;
+                    transform: rotate(-30deg);
+                    .mask{
+                        width: 50%;
+                        height: 50%;
+                        -webkit-mask-box-image: url(../img/drumstick.svg);
+                        transform: rotate(-5deg);
+                    }
+                    .hidden{
+                        left: 50%;
+                    }
+                    .text{
+                        transform: rotate(30deg);
+                    }
+                }
+                &:nth-of-type(3){
+                    margin: 200px auto;
+                    .mask{
+                        width: 50%;
+                        height: 50%;
+                        -webkit-mask-box-image: url(../img/jar.svg);
+                        transform: rotate(-10deg);
+                        left: 30px;
+                        position: relative;
+                    }  
+                    .text{
+                        position: relative;
+                        top: 40px;
+                        left: 20px;
+                        font: bold 1.2vw/1.6 "Noto Serif KR";
+                    }
+                }
+            }
+            .museum1{
+                left: 5px;
+                font: bold 3.5vw/1 "Nanum Myeongjo";
+            }
+            .museum2{
+                left: 10px;
+                font: bold 3.5vw/1 "Nanum Myeongjo";
+            }
+            .map1{
+                width: 100%;
+            }
+            .palace1{
+                left: 5px;
+                font: bold 3.5vw/1 "Nanum Myeongjo";
+            }
+            .palace2{
+                left: 10px;
+                font: bold 3.5vw/1 "Nanum Myeongjo";
+            }
+            .map2{
+                width: 100%;
+            }
+            .airport1{
+                left: 5px;
+                font: bold 3.5vw/1 "Nanum Myeongjo";
+            }
+            .airport2{
+                left: 10px;
+                font: bold 3.5vw/1 "Nanum Myeongjo";
+            }
+            .map3{
+                width: 90%;
+            }
+            .trip{
+                font: bold 4vw/1 "Nanum Myeongjo";
+            }
         }
     }
 }
 
 @media screen and (max-width: 360px) {
-    #ingredient{
-        h1{
-            font: bold 5.5vw/1 "Nanum Myeongjo";
-        }
-        .map1{
-            iframe{
-                border-radius: 150px;
+    body{
+        #ingredient{
+            h1{
+                font: bold 5.5vw/1 "Nanum Myeongjo";
+            }
+            .map1{
+                iframe{
+                    border-radius: 150px;
+                }
             }
         }
     }
