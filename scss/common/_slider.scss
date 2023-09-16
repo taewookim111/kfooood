@@ -7,7 +7,7 @@ body{
         margin: 200px auto 250px;
         .title{
             position: relative;
-            font: bold 80px "arial";
+            font: bold 80px/1 "arial";
             color: #999;
         }
         .panel{
@@ -98,24 +98,21 @@ body{
             .panel{
                 li{
                     h2{
-                        font: bold 170px/1 "Noto Serif KR";
+                        top: 50px;
+                        font: bold 10vw/1 "Noto Serif KR";
                         margin-left: 25%;
                     }
                     p{
-                        font: bold 100px/1 "Noto Serif KR";
-                        bottom: 140px;
+                        font: bold 5vw/1 "Noto Serif KR";
+                        bottom: 250px;
                         margin-left: 22%;
                     }
                     &:nth-of-type(2){
                         h2{
                             margin-left: 12%;
-                            color: yellow;
                         }
                         p{
                             margin-left: 11%;
-                            color: yellow;
-                            bottom: 160px;
-    
                         }
                     }
                     &:nth-of-type(3){
@@ -124,7 +121,6 @@ body{
                         }
                         p{
                             margin-left: 4%;
-                            bottom: 180px;
                         }
                     }
                 }
@@ -142,27 +138,14 @@ body{
             .panel{
                 li{
                     h2{
-                        font: bold 30px/1 "Noto Serif KR";
-                        top: 20px;
                         margin-left: 20%;
                     }
                     p{
-                        font: bold 10px/1 "Noto Serif KR";
-                        bottom: 140px;
                         margin-left: 15%;
                     }
                     &:nth-of-type(2){
                         h2{
                             margin-left: 9%;
-                        }
-                        p{
-                            bottom: 150px;
-    
-                        }
-                    }
-                    &:nth-of-type(3){
-                        p{
-                            bottom: 150px;
                         }
                     }
                 }

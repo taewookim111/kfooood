@@ -214,7 +214,7 @@ body #slider {
 }
 body #slider .title {
   position: relative;
-  font: bold 80px "arial";
+  font: bold 80px/1 "arial";
   color: #999;
 }
 body #slider .panel {
@@ -292,29 +292,26 @@ body #slider .btns li.on a {
 
 @media screen and (max-width: 1179px) {
   body #slider .panel li h2 {
-    font: bold 170px/1 "Noto Serif KR";
+    top: 50px;
+    font: bold 10vw/1 "Noto Serif KR";
     margin-left: 25%;
   }
   body #slider .panel li p {
-    font: bold 100px/1 "Noto Serif KR";
-    bottom: 140px;
+    font: bold 5vw/1 "Noto Serif KR";
+    bottom: 250px;
     margin-left: 22%;
   }
   body #slider .panel li:nth-of-type(2) h2 {
     margin-left: 12%;
-    color: yellow;
   }
   body #slider .panel li:nth-of-type(2) p {
     margin-left: 11%;
-    color: yellow;
-    bottom: 160px;
   }
   body #slider .panel li:nth-of-type(3) h2 {
     margin-left: 4%;
   }
   body #slider .panel li:nth-of-type(3) p {
     margin-left: 4%;
-    bottom: 180px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -325,23 +322,13 @@ body #slider .btns li.on a {
     font: bold 25px/1 "arial";
   }
   body #slider .panel li h2 {
-    font: bold 30px/1 "Noto Serif KR";
-    top: 20px;
     margin-left: 20%;
   }
   body #slider .panel li p {
-    font: bold 10px/1 "Noto Serif KR";
-    bottom: 140px;
     margin-left: 15%;
   }
   body #slider .panel li:nth-of-type(2) h2 {
     margin-left: 9%;
-  }
-  body #slider .panel li:nth-of-type(2) p {
-    bottom: 150px;
-  }
-  body #slider .panel li:nth-of-type(3) p {
-    bottom: 150px;
   }
 }
 body #box {
@@ -513,7 +500,7 @@ body .aside.on {
     width: 23%;
   }
   body #box .inner article i {
-    font-size: 80px;
+    font-size: 10vw;
   }
   body #box .inner article p {
     font: bold 12px/1 "Noto Serif KR";
