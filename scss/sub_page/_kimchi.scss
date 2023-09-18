@@ -311,7 +311,7 @@ body{
             }
             .banner{
                 h2{
-                    top: 530px;
+                    top: 700px;
                 }
                 .inner3{
                     width: 100%;
@@ -323,6 +323,7 @@ body{
         }
         #map{
             div{
+                position: absolute;
                 h2{
                     left: 100px;
                     font: bold 2.2vw/1 "Noto Serif KR";
@@ -333,28 +334,29 @@ body{
                     font: normal 2vw/1 "Nanum Myeongjo";
                 }
                 img{
-                    width: 150px;
+                    width: 10%;
                 }
                 .pic{
-                    width: 150px;
+                    width: 10%;
                 }
             }
             .left{
                 position: absolute;
-                left: -1000px;
+                left: 100px;
                 h2{
-                    bottom: 300px;
+                    bottom: 100px;
                 }
                 h3{
-                    bottom: 300px;
+                    bottom: 100px;
                 }
             }
             .right{
                 h2{
                     left: 50px;
+                    bottom: 100px;
                 }
                 h3{
-                    bottom: 300px;
+                    bottom: 100px;
                 }
                 
             }
@@ -363,33 +365,36 @@ body{
                 left: -1000px;
                 h2{
                     left: 100px;
-                    bottom: 300px;
+                    bottom: 100px;
                 }
                 h3{
                     right: 20px;
-                    bottom: 300px;
+                    bottom: 100px;
                 }
             }
             .right1{
                 right: -2100px;
                 h2{
-                    bottom : 300px;
+                    bottom: 100px;
                 }
                 h3{
-                    bottom: 300px;
+                    bottom: 100px;
+                }
+                .pic{
+                    width: 10%;
                 }
             }
             .left2{
                 left: -1000px;
                 h2{
-                    left: 200px;
-                    bottom: 300px;
+                    left: 100px;
+                    bottom: 100px;
                 }
                 h3{
-                    bottom: 300px;
+                    bottom: 100px;
                 }
                 .pic{
-                    width: 150px;
+                    width: 10%;
                 }
             }
         }

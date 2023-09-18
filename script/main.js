@@ -1,8 +1,5 @@
 const btnMetro = document.querySelectorAll("#metro nav a");
 const boxMetro = document.querySelectorAll("#metro section");
-const panel = document.querySelector(".panel");
-const panel_li = panel.querySelectorAll("li");
-const btnPanel = document.querySelectorAll(".btns li");
 const tapmenu = document.querySelector("#tapmenu");
 const btns = tapmenu.querySelectorAll("ul li");
 const boxes = tapmenu.querySelectorAll("section article");
@@ -34,14 +31,7 @@ btnMetro.forEach((el, index)=>{
     })
 })
 
-btnPanel.forEach((el, index)=>{
-    el.addEventListener("click", (e)=>{
-        e.preventDefault();
-        add(btnPanel, index);
-        play(panel_li, index);
-        panel.style.marginLeft = `${-100*index}%`;
-    })
-})
+
 
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", (e) => {
@@ -65,10 +55,10 @@ window.addEventListener("scroll", ()=>{
 
     title.style.left = `${scroll - posArr[4] + 300}px`;
     lastText.style.left = `${scroll - posArr[7] + 470}px`;
-    let Num1 = 900;
-    if(scroll >= posArr[6] - Num1 && scroll < posArr[7] - 200){
-        title1.style.left = `${scroll - posArr[7] + 205}px`;
-        title2.style.right = `${scroll - posArr[7] + 205}px`;
+    let Num1 = 1000;
+    if(scroll >= posArr[6] - Num1 && scroll < posArr[7] - 150){
+        title1.style.left = `${scroll - posArr[7] + 200}px`;
+        title2.style.right = `${scroll - posArr[7] + 200}px`;
     };
     
 });
@@ -94,14 +84,7 @@ function active(list, idx){
     list[idx].classList.add("active");
 }
 
-function play(list, idx){
-    for(let el of list) el.querySelector("video").pause();
-    list[idx].querySelector("video").play();
-}
-
 function pop(list, index) {
     for (let box of list) { box.classList.remove("on"); }
     list[index].classList.add("on");
 }
-
-

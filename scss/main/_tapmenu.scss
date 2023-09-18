@@ -134,6 +134,7 @@
         color: brown;
         top: 80px;
         right: -360px;
+        z-index: 1;
     }
     h1{
         position: absolute;
@@ -147,7 +148,7 @@
 @media screen and (max-width : 1200px){
     #tapmenu{
         .title1{
-            font: bold 3vw/1 "arial";
+            font: bold 4vw/1 "arial";
             margin-right: 0px;
         }
         #buttons{
@@ -176,11 +177,11 @@
             }
         }
         .title2{
-            font: bold 2.2vw/1 "arial";
+            font: bold 4vw/1 "arial";
         }
         h1{
-            font: bold 20px/1 "arial";
-            left: -200px;
+            font: bold 5vw/1 "arial";
+            left: -220px;
             padding: 10px;
         }
     }
