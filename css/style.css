@@ -205,41 +205,43 @@ body header .inner .menuMo.on {
     font: bold 12px/1.7 "Noto Serif KR";
   }
 }
-body #slider {
+body #layout {
   width: 100%;
   height: 500px;
   overflow: hidden;
   position: relative;
   margin: 200px auto 250px;
 }
-body #slider .title {
+body #layout .title {
   position: relative;
   font: bold 80px/1 "arial";
   color: #999;
 }
-body #slider .panel {
+body #layout .panel {
   width: 1180px;
   margin: 10px auto 0;
   height: 100%;
   transition: 0.6s;
 }
-body #slider .panel::after {
+body #layout .panel::after {
   content: "";
   display: block;
   clear: both;
 }
-body #slider .panel li {
+body #layout .panel li {
   width: 380px;
   height: 100%;
   margin-right: 20px;
   float: left;
   overflow: hidden;
+  border-radius: 50%;
 }
-body #slider .panel li:nth-of-type(3) {
+body #layout .panel li:nth-of-type(3) {
   margin-right: 0px;
 }
-body #slider .panel li video {
-  object-fit: fill;
+body #layout .panel li video {
+  width: 380px;
+  height: 500px;
 }
 
 body #box {
