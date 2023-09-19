@@ -61,11 +61,18 @@ body{
                 width: 100%;
                 ul{
                     float: auto;
+                    li{
+                        a{
+                            padding: 10px;
+                            font: bold 1.2vw/30px "Noto Serif KR";
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 @media screen and (max-width:360px) {
     body{
         footer{
@@ -73,11 +80,6 @@ body{
             .inner{
                 ul{
                     gap: 2px;
-                    li{
-                        a{
-                            font: bold 2vw/1px "Noto Serif KR";
-                        }
-                    }
                 }
                 address{
                     font:11px/1.3 "arial";

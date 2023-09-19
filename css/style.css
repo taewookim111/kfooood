@@ -207,7 +207,7 @@ body header .inner .menuMo.on {
 }
 body #layout {
   width: 100%;
-  height: 500px;
+  height: 800px;
   overflow: hidden;
   position: relative;
   margin: 200px auto 250px;
@@ -216,44 +216,141 @@ body #layout .title {
   position: relative;
   font: bold 80px/1 "arial";
   color: #999;
+  margin-bottom: 30px;
 }
-body #layout .panel {
+body #layout .wrap {
+  margin: 0 auto;
   width: 1180px;
-  margin: 10px auto 0;
   height: 100%;
-  transition: 0.6s;
 }
-body #layout .panel::after {
+body #layout .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-body #layout .panel li {
-  width: 380px;
-  height: 100%;
-  margin-right: 20px;
+body #layout .wrap article {
   float: left;
-  overflow: hidden;
-  border-radius: 50%;
-}
-body #layout .panel li:nth-of-type(3) {
-  margin-right: 0px;
-}
-body #layout .panel li video {
   width: 380px;
-  height: 500px;
+  margin-right: 20px;
+  height: 100%;
+  overflow: hidden;
+  filter: brightness(0.5);
+  transition: 0.5s;
+  cursor: pointer;
+}
+body #layout .wrap article video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body #layout .wrap article i {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  transform: rotate(45deg);
+  color: #fff;
+  font-size: 13px;
+  top: 13px;
+  margin-left: 75px;
+}
+body #layout .wrap article h3 {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 50px;
+  margin-left: 30px;
+  font: bold 50px/1 "Noto Serif KR";
+  color: #fff;
+  transition: 0.6s;
+}
+body #layout .wrap article p {
+  opacity: 0;
+  display: none;
+  width: 300px;
+  position: absolute;
+  top: 350px;
+  min-height: 200px;
+  margin-left: 40px;
+  font: bold 17px/1.7 "Noto Serif KR";
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 13px;
+  transition: 0.6s;
+}
+body #layout .wrap article:last-child {
+  margin-right: 0;
+}
+body #layout .wrap article.on {
+  filter: brightness(1);
+}
+body #layout .wrap article.on h3 {
+  opacity: 1;
+  display: block;
+}
+body #layout .wrap article.on p {
+  opacity: 1;
+  display: block;
 }
 
+@media screen and (max-width: 1179px) {
+  body #layout .title {
+    font: bold 15vw/1 "arial";
+  }
+  body #layout .wrap {
+    width: 100%;
+  }
+  body #layout .wrap article {
+    width: 32%;
+    margin-right: 2%;
+    height: 70vw;
+  }
+  body #layout .wrap article i {
+    margin-left: 80%;
+  }
+  body #layout .wrap article h3 {
+    top: 5%;
+    margin-left: 7%;
+    font: bold 3vw/1 "Noto Serif KR";
+  }
+  body #layout .wrap article p {
+    width: 80%;
+    top: 30%;
+    height: 27%;
+    margin-left: 8%;
+    font: bold 1.5vw/1.6 "Noto Serif KR";
+  }
+  body #layout .wrap article.on i {
+    opacity: 1;
+    display: block;
+  }
+}
+@media screen and (max-width: 360px) {
+  body #layout .wrap article {
+    transform: scale(1);
+  }
+  body #layout .wrap article.on {
+    transform: scale(1.1);
+  }
+  body #layout .wrap article h3 {
+    font: bold 3vw/1 "arial";
+  }
+  body #layout .wrap article p {
+    top: 25%;
+    height: 30px;
+  }
+}
 body #box {
   width: 1180px;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
+  transition: 0.5s;
 }
 body #box .inner {
   width: 100%;
   height: 100%;
   background-color: #F0EAD6;
+  z-index: -2;
 }
 body #box .inner h2 {
   position: relative;
@@ -287,7 +384,7 @@ body #box .inner article p {
   text-align: center;
 }
 body #box .inner .pic {
-  width: 130px;
+  width: 10%;
   height: 400px;
   float: right;
   position: relative;
@@ -417,12 +514,22 @@ body .aside.on {
   }
   body #box .inner article p {
     font: bold 12px/1 "Noto Serif KR";
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px;
   }
   body #box .inner .pic2 {
-    top: 100px;
-    right: -70px;
-    width: 150px;
-    height: 150px;
+    color: #fff;
+    z-index: -1;
+  }
+  body #box .inner .pic2 {
+    color: #fff;
+    z-index: -1;
+  }
+  body #box a {
+    padding: 8px 10px;
+    left: 10%;
+    font: bold 1.7vw/1 "Noto Serif KR";
   }
   body .aside {
     width: 100%;
@@ -435,7 +542,7 @@ body .aside.on {
   }
   body .aside .inner div p {
     width: 80%;
-    font: bold 12px/1.7 "Noto Serif KR";
+    font: bold 1.5vw/1.3 "Noto Serif KR";
   }
   body .aside .inner .meal2 {
     position: absolute;
@@ -445,8 +552,8 @@ body .aside.on {
   }
   body .aside .inner i {
     position: relative;
-    color: #fff;
-    top: -220px;
+    color: brown;
+    top: -200px;
     left: 50%;
   }
 }
@@ -460,6 +567,9 @@ body .aside.on {
     font: bold 8px/1 "Noto Serif KR";
   }
   body #box .inner article:nth-of-type(1) {
+    left: 20px;
+  }
+  body #box .inner article:nth-of-type(2) {
     left: 30px;
   }
   body #box .inner article:nth-of-type(3) {
@@ -480,9 +590,8 @@ body .aside.on {
     height: 80px;
   }
   body #box a {
-    padding: 8px 0px;
+    padding: 8px 5px;
     left: 20px;
-    font: bold 8px/1 "Noto Serif KR";
   }
   body .aside .inner div h2 {
     font: bold 15px/1 "Noto Serif KR";
@@ -566,6 +675,10 @@ body footer .inner p {
   body footer .inner ul {
     float: auto;
   }
+  body footer .inner ul li a {
+    padding: 10px;
+    font: bold 1.2vw/30px "Noto Serif KR";
+  }
 }
 @media screen and (max-width: 360px) {
   body footer {
@@ -573,9 +686,6 @@ body footer .inner p {
   }
   body footer .inner ul {
     gap: 2px;
-  }
-  body footer .inner ul li a {
-    font: bold 2vw/1px "Noto Serif KR";
   }
   body footer .inner address {
     font: 11px/1.3 "arial";
@@ -1595,17 +1705,17 @@ body #process .next {
     left: 100px;
   }
   body #map .left h2 {
-    bottom: 100px;
+    bottom: 150px;
   }
   body #map .left h3 {
-    bottom: 100px;
+    bottom: 150px;
   }
   body #map .right h2 {
     left: 50px;
-    bottom: 100px;
+    bottom: 150px;
   }
   body #map .right h3 {
-    bottom: 100px;
+    bottom: 150px;
   }
   body #map .left1 {
     position: absolute;
@@ -1645,15 +1755,24 @@ body #process .next {
     width: 10%;
   }
   body #process .panel2 li .text {
-    width: 420px;
+    width: 200px;
+    top: 20px;
+    height: 160px;
+    left: 0;
     font: bold 36px/1 "Noto Serif KR";
-    left: 60px;
+    left: -10px;
+  }
+  body #process .panel2 li .text:nth-of-type(1) {
+    width: 230px;
   }
   body #process .panel2 li .text1 {
-    font: normal 12px/1.4 "Noto Serif KR";
+    top: 30px;
+    width: 300px;
+    left: -60px;
+    font: normal 10px/1.4 "Noto Serif KR";
   }
   body #process .panel2[date-index="1"] .text {
-    width: 520px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1667,17 +1786,66 @@ body #process .next {
   body #kimchi .banner h2 {
     top: 750px;
   }
-  body #process .panel2 li .text {
-    width: 100%;
-    height: 60px;
-    font: bold 2vw/1 "Noto Serif KR";
+  body #map .left h2 {
     left: 50px;
+    bottom: 100px;
+  }
+  body #map .left h3 {
+    bottom: 100px;
+  }
+  body #map .right h2 {
+    left: 50px;
+    bottom: 100px;
+  }
+  body #map .right h3 {
+    bottom: 100px;
+  }
+  body #map .left1 {
+    position: absolute;
+    left: -1000px;
+  }
+  body #map .left1 h2 {
+    left: 50px;
+    bottom: 100px;
+  }
+  body #map .left1 h3 {
+    bottom: 100px;
+  }
+  body #map .right1 {
+    right: -2100px;
+  }
+  body #map .right1 h2 {
+    left: 50px;
+    bottom: 100px;
+  }
+  body #map .right1 h3 {
+    bottom: 100px;
+  }
+  body #map .right1 .pic {
+    width: 10%;
+  }
+  body #map .left2 {
+    left: -1000px;
+  }
+  body #map .left2 h2 {
+    left: 50px;
+    bottom: 100px;
+  }
+  body #map .left2 h3 {
+    bottom: 100px;
+  }
+  body #map .left2 .pic {
+    width: 10%;
+  }
+  body #process .panel2 li .text {
+    width: 10px;
+    height: 60px;
+    left: -80px;
+    font: bold 2.5vw/1 "Noto Serif KR";
   }
   body #process .panel2 li .text1 {
-    width: 100%;
-    top: 70px;
-    left: 40px;
-    font: normal 1vw/1.2 "Noto Serif KR";
+    width: 100px;
+    font: normal 1.5vw/1.2 "Noto Serif KR";
   }
 }
 body #cooking {
@@ -2437,6 +2605,10 @@ body #ingredient .trip {
     -webkit-mask-box-image: url(../img/sealeaf.svg);
     transform: rotate(-10deg);
   }
+  body #ingredient .inner .hidden {
+    width: 50%;
+    height: 50%;
+  }
   body #ingredient .inner .text {
     padding: 20px;
     transform: rotate(-30deg);
@@ -2455,6 +2627,8 @@ body #ingredient .trip {
   }
   body #ingredient .inner:nth-of-type(2) .hidden {
     left: 50%;
+    width: 50%;
+    height: 50%;
   }
   body #ingredient .inner:nth-of-type(2) .text {
     transform: rotate(30deg);
@@ -2472,8 +2646,8 @@ body #ingredient .trip {
   }
   body #ingredient .inner:nth-of-type(3) .text {
     position: relative;
-    top: 40px;
-    left: 20px;
+    top: 0px;
+    left: 10px;
     font: bold 1.2vw/1.6 "Noto Serif KR";
   }
   body #ingredient .museum1 {
@@ -2521,6 +2695,115 @@ body #ingredient .trip {
     border-radius: 150px;
   }
 }
+body #slowfood {
+  width: 400px;
+  height: 300%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: linear-gradient(45deg, aqua, royalblue);
+  transition: 1s;
+}
+body #slowfood h1 {
+  font: bold 50px/1 "anton";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-150%);
+  letter-spacing: 2px;
+}
+body #slowfood h1::before {
+  content: "UI/UX development";
+  display: block;
+  font: 14px/1 "anton";
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+body #slowfood h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+body #slowfood ul {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+body #slowfood ul li {
+  float: left;
+  margin-right: 5px;
+}
+body #slowfood ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+body #pastes {
+  margin-left: 400px;
+}
+body #pastes ul {
+  float: right;
+  margin-bottom: 10px;
+}
+body #pastes ul li {
+  float: left;
+  width: 100px;
+  height: 26px;
+  margin-left: 20px;
+}
+body #pastes ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: normal 7px/26px "anton";
+  color: #aaa;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+body #pastes ul li.on a {
+  background: linear-gradient(45deg, aqua, royalblue);
+  color: #fff;
+}
+body #pastes section {
+  width: 100%;
+  float: left;
+  background-color: burlywood;
+}
+body #pastes section article {
+  width: 20%;
+  padding: 12px;
+  float: left;
+}
+body #pastes section article div {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  border-radius: 4px;
+}
+body #pastes section article div img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+body #pastes section article div h2 {
+  font: bold 11px/1 "arial";
+  color: #444;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+body #pastes section article div p {
+  font: 10px/1.2 "arial";
+  color: #777;
+  margin-bottom: 15px;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;

@@ -236,6 +236,10 @@ body{
                     -webkit-mask-box-image: url(../img/sealeaf.svg);
                     transform: rotate(-10deg);
                 }
+                .hidden{
+                    width: 50%;
+                    height: 50%;
+                }
                 .text{
                     padding: 20px;
                     transform: rotate(-30deg);
@@ -253,6 +257,8 @@ body{
                     }
                     .hidden{
                         left: 50%;
+                        width: 50%;
+                        height: 50%;
                     }
                     .text{
                         transform: rotate(30deg);
@@ -270,8 +276,8 @@ body{
                     }  
                     .text{
                         position: relative;
-                        top: 40px;
-                        left: 20px;
+                        top: 0px;
+                        left: 10px;
                         font: bold 1.2vw/1.6 "Noto Serif KR";
                     }
                 }

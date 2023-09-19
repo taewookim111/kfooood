@@ -6,12 +6,14 @@ const boxes = tapmenu.querySelectorAll("section article");
 const aside = document.querySelector(".aside");
 const openTag = document.querySelector("#box a");
 const closeTag = aside.querySelector("i");
-
+const title = document.querySelector(".title");
+const layout = document.querySelector("#layout");
+const articles = layout.querySelectorAll(".wrap article");
+const Xtag = layout.querySelectorAll(".wrap article i");
 
 let pages = document.querySelector("body").children;
 console.log(pages);
 let pages_arr = Array.from(pages);
-let title = document.querySelector(".title");
 console.log(pages_arr);
 posArr = []; 
 const lastText = tapmenu.querySelector("h1"); 
@@ -53,7 +55,7 @@ window.addEventListener("scroll", ()=>{
     let scroll = window.scrollY || window.pageYOffset
     || document.documentElement.scrollTop;
 
-    title.style.left = `${scroll - posArr[4] + 300}px`;
+    title.style.left = `${scroll - posArr[4] + 600}px`;
     lastText.style.left = `${scroll - posArr[7] + 470}px`;
     let Num1 = 1000;
     if(scroll >= posArr[6] - Num1 && scroll < posArr[7] - 150){
@@ -62,6 +64,25 @@ window.addEventListener("scroll", ()=>{
     };
     
 });
+
+for(let el of articles){
+    el.addEventListener("mouseenter", (e) => {
+        e.currentTarget.querySelector("video").play();
+        e.currentTarget.classList.add("on");
+        for(let el of Xtag){
+            el.addEventListener("click", (e)=>{
+                e.currentTarget.closest("article").classList.remove("on");
+                e.currentTarget.closest("article").querySelector("video").pause();
+            })
+        }
+    })
+    el.addEventListener("mouseleave", (e) => {
+        e.currentTarget.querySelector("video").pause();
+        e.currentTarget.classList.remove("on");
+    })
+}
+
+
 
 
 openTag.addEventListener("click", (e)=>{

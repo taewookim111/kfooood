@@ -1,7 +1,7 @@
 body{
     #layout{
         width: 100%;
-        height: 500px;
+        height: 800px;
         overflow: hidden;
         position: relative;
         margin: 200px auto 250px;
@@ -9,30 +9,139 @@ body{
             position: relative;
             font: bold 80px/1 "arial";
             color: #999;
+            margin-bottom: 30px;
         }
-        .panel{
+        .wrap{
+            margin: 0 auto;
             width: 1180px;
-            margin: 10px auto 0;
             height: 100%;
-            transition: 0.6s;
             &::after{
                 content: '';
                 display: block;
                 clear: both;
             }
-            li{
-                width: 380px;
-                height: 100%;
-                margin-right: 20px;
+            article{
                 float: left;
+                width: 380px;
+                margin-right: 20px;
+                height: 100%;
                 overflow: hidden;
-                border-radius: 50%;
-                &:nth-of-type(3){
-                    margin-right: 0px;
-                }
+                filter: brightness(0.5);
+                transition: 0.5s;
+                cursor: pointer;
                 video{
-                    width: 380px;
-                    height: 500px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                i{
+                    position: absolute;
+                    opacity: 0;
+                    display: none;
+                    transform: rotate(45deg);
+                    color: #fff;
+                    font-size: 13px;
+                    top: 13px;
+                    margin-left: 75px;
+                }
+                h3{
+                    opacity: 0;
+                    display: none;
+                    position: absolute;
+                    top: 50px;
+                    margin-left: 30px;
+                    font: bold 50px/1 "Noto Serif KR";
+                    color: #fff;
+                    transition: 0.6s;
+                }
+                p{
+                    opacity: 0;
+                    display: none;
+                    width: 300px;
+                    position: absolute;
+                    top: 350px;
+                    min-height: 200px;
+                    margin-left: 40px;
+                    font: bold 17px/1.7 "Noto Serif KR";
+                    color: #fff;
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 13px;
+                    transition: 0.6s;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                &.on{
+                    filter: brightness(1);
+                    h3{
+                        opacity: 1;
+                        display: block;
+                    }
+                    p{
+                        opacity: 1;
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:1179px) {
+    body{
+        #layout{
+            .title{
+                font: bold 15vw/1 "arial";
+            }
+            .wrap{
+                width: 100%;
+                article{
+                    width: 32%;
+                    margin-right: 2%;
+                    height: 70vw;
+                    i{
+                        margin-left: 80%;
+                    }
+                    h3{
+                        top: 5%;
+                        margin-left: 7%;
+                        font: bold 3vw/1 "Noto Serif KR";
+                    }
+                    p{
+                        width: 80%;
+                        top: 30%;
+                        height: 27%;
+                        margin-left: 8%;
+                        font: bold 1.5vw/1.6 "Noto Serif KR";
+                    }
+                    &.on{
+                        i{
+                            opacity: 1;
+                            display: block;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    body{
+        #layout{
+            .wrap{
+                article{
+                    transform: scale(1);
+                    &.on{
+                        transform: scale(1.1);
+                    }
+                    h3{
+                        font: bold 3vw/1 "arial";
+                    }
+                    p{
+                        top: 25%;
+                        height: 30px;
+                    }
                 }
                 
             }
