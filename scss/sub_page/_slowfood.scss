@@ -7,10 +7,10 @@ body{
         position: absolute;
         top: 60px;
         left: 0;
-        background: linear-gradient(45deg, aqua, royalblue);
+        background: linear-gradient(90deg, black, darkred);
         transition: 1s;
         h1{
-            font: bold 50px/1 "anton";
+            font: bold 50px/1 "arial";
             color: #fff;
             position: absolute;
             top: 50%;
@@ -18,7 +18,7 @@ body{
             transform: translateY(-150%);
             letter-spacing: 2px;
             &::before{
-                content: 'UI/UX development';
+                content: '발효 음식 (Slowfood)';
                 display: block;
                 font: 14px/1 "anton";
                 color: #fff;
@@ -42,8 +42,8 @@ body{
                 float: left;
                 margin-right: 5px;
                 a{
-                    font-size: 20px;
                     color: #fff;
+                    font: 20px/1 "arial";
                 }
             }
         }
@@ -55,9 +55,9 @@ body{
             margin-bottom: 10px;
             li{
                 float: left;
-                width: 100px;
+                width: 200px;
                 height: 26px;
-                margin-left: 20px;
+                margin-left: 40px;
                 a{
                     display: block;
                     width: 100%;
@@ -72,7 +72,7 @@ body{
                 }
                 &.on{
                     a{
-                        background: linear-gradient(45deg, aqua, royalblue);
+                        background-color: brown;
                         color: #fff;
                     }
                 }

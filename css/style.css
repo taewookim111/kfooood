@@ -2701,11 +2701,11 @@ body #slowfood {
   position: absolute;
   top: 60px;
   left: 0;
-  background: linear-gradient(45deg, aqua, royalblue);
+  background: linear-gradient(90deg, black, darkred);
   transition: 1s;
 }
 body #slowfood h1 {
-  font: bold 50px/1 "anton";
+  font: bold 50px/1 "arial";
   color: #fff;
   position: absolute;
   top: 50%;
@@ -2714,7 +2714,7 @@ body #slowfood h1 {
   letter-spacing: 2px;
 }
 body #slowfood h1::before {
-  content: "UI/UX development";
+  content: "발효 음식 (Slowfood)";
   display: block;
   font: 14px/1 "anton";
   color: #fff;
@@ -2739,8 +2739,8 @@ body #slowfood ul li {
   margin-right: 5px;
 }
 body #slowfood ul li a {
-  font-size: 20px;
   color: #fff;
+  font: 20px/1 "arial";
 }
 body #pastes {
   margin-left: 400px;
@@ -2751,9 +2751,9 @@ body #pastes ul {
 }
 body #pastes ul li {
   float: left;
-  width: 100px;
+  width: 200px;
   height: 26px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 body #pastes ul li a {
   display: block;
@@ -2768,7 +2768,7 @@ body #pastes ul li a {
   border-radius: 4px;
 }
 body #pastes ul li.on a {
-  background: linear-gradient(45deg, aqua, royalblue);
+  background-color: brown;
   color: #fff;
 }
 body #pastes section {
