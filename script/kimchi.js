@@ -85,30 +85,36 @@ window.addEventListener("scroll", ()=>{
     let opac = (0 + bgscroll2 / 1000).toString();
     bg3.style.opacity = opac;
     
-
-    if(scroll >= pos_Arr[0] - 900 && scroll <= pos_Arr[0] - 104){
-        leftDiv.style.left = `${scroll - pos_Arr[0] + 290}px`;
-    };
-
-    if(scroll >= pos_Arr[0] - 300 && scroll <= pos_Arr[1] - 125){
-        rightDiv.style.right = `${scroll - pos_Arr[1] + 330}px`;
-    };
-
-    if(scroll >= pos_Arr[1] - 900 && scroll <= pos_Arr[2] - 90){
-        leftDiv1.style.left = `${scroll - pos_Arr[2] + 290}px`;
-    };
+    if(window.innerWidth >= "1179px"){
+        if(scroll >= pos_Arr[0] - 900 && scroll <= pos_Arr[0] - 104){
+            leftDiv.style.left = `${scroll - pos_Arr[0] + 290}px`;
+        };
     
-    if(scroll >= pos_Arr[2] + 100 && scroll <= pos_Arr[3] - 300){
-        rightDiv1.style.right = `${scroll - pos_Arr[3] + 450}px`;
-    };
+        if(scroll >= pos_Arr[0] - 300 && scroll <= pos_Arr[1] - 125){
+            rightDiv.style.right = `${scroll - pos_Arr[1] + 330}px`;
+        };
+    
+        if(scroll >= pos_Arr[1] - 900 && scroll <= pos_Arr[2] - 90){
+            leftDiv1.style.left = `${scroll - pos_Arr[2] + 290}px`;
+        };
+        
+        if(scroll >= pos_Arr[2] + 100 && scroll <= pos_Arr[3] - 300){
+            rightDiv1.style.right = `${scroll - pos_Arr[3] + 450}px`;
+        };
+    
+        if(scroll >= pos_Arr[3] + 200 && scroll <= pos_Arr[4] - 200){
+            leftDiv2.style.left = `${scroll - pos_Arr[4] + 420}px`;
+        };
+    
+        if(scroll >= 0 && scroll <= pos_Arr[0] - 950){
+            chilli.style.left = `${scroll - 452}px`;
+        };
+    }else{
+        for(let el of div){
+            el.style.left = "5%";
+        }
+    }
 
-    if(scroll >= pos_Arr[3] + 200 && scroll <= pos_Arr[4] - 200){
-        leftDiv2.style.left = `${scroll - pos_Arr[4] + 420}px`;
-    };
-
-    if(scroll >= 0 && scroll <= pos_Arr[0] - 950){
-        chilli.style.left = `${scroll - 452}px`;
-    };
 });
 
 function add(list, idx){

@@ -1,3 +1,5 @@
+const Btns = document.querySelectorAll("#pastes ul li");
+const menu = document.querySelector("#slowfood");
 
 window.addEventListener("load",()=>{
     const grid = new Isotope(".isotope",{
@@ -5,8 +7,7 @@ window.addEventListener("load",()=>{
         columnWidth : "article",
         transitionDuration : "0.5s"
     });
-
-    let Btns = document.querySelectorAll("#pastes ul li");
+    menu.style.left = `0`;
     for(let el of Btns){
         el.addEventListener("click", (e)=>{
             e.preventDefault();
@@ -16,7 +17,8 @@ window.addEventListener("load",()=>{
             });
             for(let el of Btns) el.classList.remove("on");
             e.currentTarget.classList.add("on");
+            menu.style.height = `140%`;
         })
     }
-
 })
+
