@@ -84,8 +84,9 @@ window.addEventListener("scroll", ()=>{
     let bgscroll2 = scroll - 5400;
     let opac = (0 + bgscroll2 / 1000).toString();
     bg3.style.opacity = opac;
+
     
-    if(window.innerWidth >= "1179px"){
+    if(window.screen.width >= 1179){
         if(scroll >= pos_Arr[0] - 900 && scroll <= pos_Arr[0] - 104){
             leftDiv.style.left = `${scroll - pos_Arr[0] + 290}px`;
         };
@@ -109,9 +110,10 @@ window.addEventListener("scroll", ()=>{
         if(scroll >= 0 && scroll <= pos_Arr[0] - 950){
             chilli.style.left = `${scroll - 452}px`;
         };
-    }else{
+    }else if(window.innerWidth < 1179){
         for(let el of div){
             el.style.left = "5%";
+            chilli.style.display = "none";
         }
     }
 
