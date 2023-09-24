@@ -17,7 +17,7 @@ window.addEventListener("load",()=>{
             });
             for(let el of Btns) el.classList.remove("on");
             e.currentTarget.classList.add("on");
-            menu.style.height = `140%`;
+            menu.style.height = `180%`;
         })
     }
 })
